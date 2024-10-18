@@ -39,20 +39,44 @@ const myFunction = function(){ // it is called as object function
     
 }
 
-console.log(typeof score);
-console.log(typeof scoreValue);
-console.log(typeof isLoggedIn);
-console.log(typeof outsideTemp);
-console.log(typeof userEmail);
-console.log(typeof id);
-console.log(typeof anotherId);
-console.log(typeof bigNumber);
-console.log(typeof heros);
-console.log(typeof myObj);
-console.log( typeof myFunction);
+// console.log(typeof score);
+// console.log(typeof scoreValue);
+// console.log(typeof isLoggedIn);
+// console.log(typeof outsideTemp);
+// console.log(typeof userEmail);
+// console.log(typeof id);
+// console.log(typeof anotherId);
+// console.log(typeof bigNumber);
+// console.log(typeof heros);
+// console.log(typeof myObj);
+// console.log( typeof myFunction);
 
 
+// ********************** Memory in js ***************** //
+
+// stack (Primitive), Heap (Non Premitive)
+
+// stack- copy
+// Heap- Reference (original)
+
+let myYoutubename = "Thinkwithsom"
+
+let anotherName = "kodeXsom"
+
+console.log(anotherName);
+console.log(myYoutubename);
 
 
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@ybl",
 
+}
+
+let userTwo = userOne
+
+userTwo.email = "kodeX@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
 
